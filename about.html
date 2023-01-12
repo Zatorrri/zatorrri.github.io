@@ -22,8 +22,8 @@
   style="background-repeat:no-repeat;background-attachment:fixed;background-size: cover;background-image:url('pic/bg_day.jpg')">
   <div>
     <!-- <img src="pic/1.png" width="100%"></img> -->
-    <nav class="navbar navbar-expand-lg" style="z-index: 999; position:fixed; width: 100%;background-color: rgba(245,245,245,1);"
-      id="dl_0">
+    <nav class="navbar navbar-expand-lg"
+      style="z-index: 999;position:fixed; width: 100%;background-color: rgba(245,245,245,1);" id="dl_0">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">CBD Life</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -32,6 +32,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="intro.html">Intro</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="mainpage.html">Blogs</a>
             </li>
@@ -43,12 +46,13 @@
             </li>
           </ul>
           <span class="navbar-text">
-            <div class="form-check form-switch" style="top:45px; ">
+            <div class="form-check form-switch">
 
               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
                 onclick="changeMode(this)">
               <label class="form-check-label" for="flexSwitchCheckDefault">Night</label>
-            </div>          </span>
+            </div>
+          </span>
         </div>
       </div>
   </div>
@@ -61,81 +65,108 @@
     <div style="padding: 3.5rem 1.5rem">
       <div class="row">
         <div class="col-1"></div>
-        <div class="col-5" style="margin-top: 45px;">
-          <div style="padding: 1rem 1rem;background-color: rgba(245,245,245,0.9);border-radius: 1rem;" id="dl_1">
+        <div class="col-10" style="margin-top: 45px;">
+          <div class="row">
+            <div class="col-12" style="padding: 1rem 1rem;background-color: rgba(245,245,245,0.9);border-radius: 1rem;"
+              id="dl_1">
+              <div class="row">
+                <div class="col-5">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="pic/JJ.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">JJ</h5>
+                          <p class="card-text">Hi, I'm JJ from Taiwan, the director and video editor. Hope you enjoy the
+                            video made with love.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="pic/johnny.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Johnny</h5>
+                          <p class="card-text">Hi! I'm Johnny from Guizhou, China. Love games, love musics and love my
+                            life!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="pic/merli.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Merlin</h5>
+                          <p class="card-text">Hi there! Merlin from Zhejiang. Uh... anyway, </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="pic/cloe.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Chloe</h5>
+                          <p class="card-text">
+                            Hi~I am Chloe from Guangdong, China. You are welcome to speak Cantonese to me! Wish we all
+                            have
+                            a good day~
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="pic/l.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Lydia</h5>
+                          <p class="card-text">Hello, I'm Lydia from Yunnan, China. Nice to meet you!</p>
+                        </div>
+                      </div>
+                    </div>
 
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Name</h5>
-                  <p class="card-text">自我介绍</p>
+                  </div>
+                </div>
+                <dic class="col-7">
+                  <div>
+                    <h4>Here's our video and DO NOT forget our photographer JJ!</h4>
+                    <video controls width="90%">
+                      <source src="pic/mov.mp4"
+                              type="video/mp4">
+                    </video>
+                  <div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Name</h5>
-                  <p class="card-text">自我介绍</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Name</h5>
-                  <p class="card-text">自我介绍</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Name</h5>
-                  <p class="card-text">自我介绍</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Name</h5>
-                  <p class="card-text">自我介绍</p>
-                </div>
-              </div>
-            </div>
-          </div>
+
           </div>
         </div>
-        <dic class="col-5">
-          
-        </dic>
-        <div class="col-1"></div>
+
       </div>
+
+    </div>
+
+    <div class="col-1"></div>
+    </div>
+
   </section>
 </body>
 
