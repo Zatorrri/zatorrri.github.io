@@ -2,110 +2,222 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.2.0/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.2.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap-table/1.15.4/bootstrap-table.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap-table/1.15.4/bootstrap-table.min.css">
 
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap-table/1.15.4/bootstrap-table.min.js"></script>
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap-table/1.15.4/bootstrap-table.min.js"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 </head>
 
-<body>
+<body id="mybody"
+  style="background-repeat:no-repeat;background-attachment:fixed;background-size: cover;background-image:url('pic/bg_day.jpg')">
   <div>
-    <nav class="navbar navbar-expand-lg bg-light" style="position:fixed; width: 100%;">
-        <div class="container-fluid" >
-            <a class="navbar-brand" href="#">CBD Life</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="mainpage.html">Blogs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="about.html">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
-                <span class="navbar-text">
-                  Navbar text with an inline element
-                </span>
+    <!-- <img src="pic/1.png" width="100%"></img> -->
+    <nav class="navbar navbar-expand-lg" style="z-index: 999; position:fixed; width: 100%;background-color: rgba(245,245,245,1);"
+      id="dl_0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">CBD Life</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="mainpage.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <div class="form-check form-switch" style="top:45px; ">
+
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                onclick="changeMode(this)">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Night</label>
+            </div>          </span>
+        </div>
+      </div>
+  </div>
+  </nav>
+
+
+  </div>
+
+  <section class="section">
+    <div style="padding: 3.5rem 1.5rem">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-5" style="margin-top: 45px;">
+          <div style="padding: 1rem 1rem;background-color: rgba(245,245,245,0.9);border-radius: 1rem;" id="dl_1">
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">自我介绍</p>
+                </div>
               </div>
             </div>
-        </div>
-    </nav>
-
-    
-</div>
-
-    <section class="section">
-        <div style="padding: 3.5rem 1.5rem">
-            <div class="row">
-                <div class="col-1">
-
+          </div>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">自我介绍</p>
                 </div>
-                <div class="col-2">
-                  <div class="card" style="width: 100%;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Student A</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-2">
-                  <div class="card" style="width: 100%;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Student B</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-2">
-                  <div class="card" style="width: 100%;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Student C</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-2" >
-                  <div class="card" style="width: 100%;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Student D</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-2" >
-                  <div class="card" style="width: 100%;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Student E</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-1">
-                  
-                </div>
+              </div>
             </div>
-    </section>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">自我介绍</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">自我介绍</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">自我介绍</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <dic class="col-5">
+          
+        </dic>
+        <div class="col-1"></div>
+      </div>
+  </section>
 </body>
+
+<script>
+  var f1 = `
+
+  > The safety problem of students studying abroad is often ignored. However, once they get angry, they will become scars that will never be erased.<br>
+We can find some policies about CBD safety on the government website. Here are the CBD safety plans: Protect members of the public and responders from injury or death. Promptly facilitate the safe movement of people away from Danger Areas. Minimise disruption caused to unaffected areas. Maximise availability of transportation assets. Allow the return of evacuees within the earliest possible timeframe. Provide responding organizations with the necessary strategy and information to allow them to effectively implement their roles and responsibilities in support of an evacuation. <abbr title="https://www.nsw.gov.au/rescue-and-emergency-management/sub-plans/sydney-cbd-safety"><b><a href="https://www.nsw.gov.au/rescue-and-emergency-management/sub-plans/sydney-cbd-safety">[source]</a></b></abbr>
+As we all know, life comes first. Life safety is very important to international students. We need to protect ourselves from all kinds of crimes and dangers. To live and learn from the motherland to other strange countries, the first thing to ensure is the safety of life and property. Students studying abroad should always prioritize safety awareness and minimize risks.`
+  var f2 = `
+> Sydney's CBD is serviced by commuter rail, light rail, bus, and ferry transport. There are many train stations, such as Central Station, Museum StationTown Hall Station, and so on. There are 501, 436, 480, 483, 3339, 374, 100, L23, L28, X09, X10, 21T4, and other direct buses to UTS and USYD. (Bus: 423 426 428 430 Train: T1 T2 T3 T4 T9).<abbr title="https://www.google.com/maps/search/CBD/@-33.8966813,151.1947065,14z/data=!3m1!4b1"><b><a href="[https://www.google.com/maps/search/CBD/@-33.8966813,151.1947065,14z/data=!3m1!4b1]">[source]</a></b></abbr><br>
+For international students, it is important to reach all kinds of places conveniently because they are not familiar with the city and they do have not much energy for searching for information and transport. If they can live in a suburb that is close to their university and markets, banks, and all necessary places, they will have more energy for study.<br>
+#Tips:#
+Within our tests, finding a public transport station will not cost a walker for more than 10 minutes, usually not more than 5. Moreover, there are lots of direct buses and trains and there is no need to transfer.
+`
+  var f3 = `
+In our definition, the environment includes only things outside your apartment, because you can make your room both clean or dirty anywhere!
+These are the four types that may interest you! 
+- Restaurants
+- Gyms
+- Shopping malls
+- Parks
+
+As the center of the city, there are lots of shopping malls. If you go outside the Townhall station, the Queen Victoria Building(A big shopping mall) is just in front of you. Actually, there are at least 4 big shopping malls in this suburb, with small shops like 7-11 and Metros everywhere!
+Though it is a big commercial center, there are still lots of parks in the CBD. **CN parks of friendship,Hyde park,Wynyard park, Macquarie Place Park,Lang park, Royal Botanic Garden Sydney…** You can reach a park with a little walk if you live here!
+You may not want to cook yourself right? Do not worry! CBD provides you with all kinds of food! Traditional Asian restaurants, Italian restaurants, Fast foods, Find everything you want to eat!
+There are also choices for exercising. Here is a short list of gyms which are located in CBD. Search for a gym which is near your apartment! Fitness First The Zone Platinum, BFT Town Hall, Body Fit Training, CrossFit 168 Sydney, Calisthenics Park…
+  `
+  var f4 = `
+In general, International students want to study as well as know more about the local culture of Australia. There are many places to visit in Sydney, but without a doubt, most of them lie in Sydney!<br>
+WILD LIFE SYDNEY, SEA LIFE SYDNEY, Darling harbor, Event Cinemas George Street, Powerhouse Museum, Darling Harbour Theatre, Sydney Opera House, Art Gallery of New South Wales, Sandringham Memorial Garden and Fountain, ARE YOU ATTRACTED? COME AND LIVE HERE!
+`
+  var f5 = `
+There is no doubt that the CBD is the most expensive place to rent, but it is also the gathering place of Sydney's urban culture. Convenient living facilities and numerous art exhibitions provide international students with unparalleled learning and living experience.<br>
+In 2023, the rent for two bedrooms and two bathrooms, for example, is already around A $1,000 a week. Although you may find the rent in the CBD unacceptably high, it doesn't seem so unaffordable when you consider that sharing a flat with friends and being close to the CBD which gives you more opportunities to get a high-paid part-time job. Living in CBD will bring you many unexpected surprises and opportunities
+
+`
+  document.getElementById('01_safety').innerHTML =
+    marked.parse(f1);
+  document.getElementById('02_public_trans').innerHTML =
+    marked.parse(f2);
+  document.getElementById('03_community_env').innerHTML =
+    marked.parse(f3);
+  document.getElementById('04_entertainment').innerHTML =
+    marked.parse(f4);
+  document.getElementById('05_rental_price').innerHTML =
+    marked.parse(f5);
+  function changeMode(e) {
+    console.log(e.checked)
+    dl_0 = document.getElementById('dl_0')
+    dl_1 = document.getElementById('dl_1')
+    dl_2 = document.getElementById('dl_2')
+    bg = document.getElementById('mybody')
+    if (e.checked == true) {
+      //night mode
+
+
+      bg.style.backgroundImage = 'url("pic/bg_night.jpg")'
+      dl_0.style.backgroundColor = 'rgba(30,30,30,1)'
+      dl_0.style.color = 'rgb(204,204,204)'
+
+      dl_1.style.backgroundColor = 'rgba(30,30,30,0.9)'
+      dl_1.style.color = 'rgb(204,204,204)'
+
+      dl_2.style.backgroundColor = 'rgba(30,30,30,0.9)'
+      dl_2.style.color = 'rgb(204,204,204)'
+
+    } else {
+      //ori
+      bg.style.backgroundImage = 'url("pic/bg_day.jpg")'
+      dl_0.style.backgroundColor = 'rgba(245,245,245,1)'
+      dl_0.style.color = 'rgb(0,0,0)'
+
+      dl_1.style.backgroundColor = 'rgba(245,245,245,0.9)'
+      dl_1.style.color = 'rgb(0,0,0)'
+
+      dl_2.style.backgroundColor = 'rgba(245,245,245,0.9)'
+      dl_2.style.color = 'rgb(0,0,0)'
+    }
+  }
+</script>
+<css>
+</css>
 
 </html>

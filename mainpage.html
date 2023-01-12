@@ -22,7 +22,7 @@
   style="background-repeat:no-repeat;background-attachment:fixed;background-size: cover;background-image:url('pic/bg_day.jpg')">
   <div>
     <!-- <img src="pic/1.png" width="100%"></img> -->
-    <nav class="navbar navbar-expand-lg" style="position:fixed; width: 100%;background-color: rgba(245,245,245,1);"
+    <nav class="navbar navbar-expand-lg" style="z-index: 999;position:fixed; width: 100%;background-color: rgba(245,245,245,1);"
       id="dl_0">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">CBD Life</a>
@@ -32,6 +32,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="intro.html">Intro</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="mainpage.html">Blogs</a>
             </li>
@@ -43,8 +46,12 @@
             </li>
           </ul>
           <span class="navbar-text">
-            Navbar text with an inline element
-          </span>
+            <div class="form-check form-switch" >
+
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                onclick="changeMode(this)">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Night</label>
+            </div>          </span>
         </div>
       </div>
   </div>
@@ -66,7 +73,7 @@
 
             <div id="scrollspyHeading1">
               <div>
-                <div style="background-image: url('pic/1.png');
+                <div style="background-image: url('【待修改】');
                 height: 300px;
                 display: flex;
                 flex-direction: column;
@@ -87,9 +94,9 @@
                   font-size: 45px;
                   font-weight: bold;
                   font-family: fantasy;
-                  text-shadow: black 0.1em 0.1em 0.2em;">subtitle of the module</h2>
+                  text-shadow: black 0.1em 0.1em 0.2em;">【待修改】</h2>
                 </div>
-                <div id="01_safety"></div>
+                <div id="01_safety" style="padding: 1rem 1rem"></div>
               </div>
             </div>
 
@@ -107,7 +114,7 @@
                 </figure>
               </div> -->
               <div>
-                <div style="background-image: url('pic/1.png');
+                <div style="background-image: url('pic/band_trans.jpg');
                 height: 300px;
                 display: flex;
                 flex-direction: column;
@@ -130,32 +137,224 @@
                   font-family: fantasy;
                   text-shadow: black 0.1em 0.1em 0.2em;">International students need to know transport information.</h2>
                 </div>
-                  <div id="02_public_trans"></div>
+                <div class="row">
+                  <div class="col-7" style="padding: 1rem 1rem">
+                    <div id="02_public_trans" ></div>
+                  </div>
+                  <div class="col-5" style="padding: 1rem 1rem">
+                    <figure class="figure">
+                      <img src="pic/pic1.jpg" class="figure-img img-fluid rounded" alt="..." style="width:500px;">
+                      <figcaption class="figure-caption text-end">The distance from USYD to CBD. <abbr
+                              title="https://en.wikipedia.org/wiki/Sydney_central_business_district#/map/0"><b><a
+                                      href="https://en.wikipedia.org/wiki/Sydney_central_business_district#/map/0">[source]</a></b></abbr>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>  
               </div>
             </div>
 
             <div id="scrollspyHeading3">
               <div>
-                <h1>Community Environment</h1>
+                <div style="background-image: url('pic/band_commu.jpg');
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                border-radius: 1rem;">
+                  <h1 style="
+                  text-align: center;
+                  color: white;
+                  font-size: 70px;
+                  font-weight: bold;
+                  font-family: fantasy;
+                  text-shadow: black 0.1em 0.1em 0.2em;">Community Environment</h1>
+                  <h2  style="
+                  text-align: center;
+                  color: white;
+                  font-size: 33px;
+                  
+                  font-family: fantasy;
+                  text-shadow: black 0.1em 0.1em 0.2em;">Four interesting things outside your apartment</h2>
+                </div>
+                <div class="row">
+                  <div class="col-7" style="padding: 1rem 1rem">
+                    <div id="03_community_env" ></div>
+                  </div>
+                  <div class="col-5" style="padding: 1rem 1rem">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                          aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                          aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="pic/1.png" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>First (shopping mall)【3张】</h5>
+                            <p>Shopping mall (name) in CBD.</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="pic/1.png" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Second (Park)【3张】</h5>
+                            <p>Park (name) in CBD.</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="pic/1.png" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Restaurants【3张】</h5>
+                            <p>Some restaurants we went in CBD.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>  
               </div>
-
-              <div id="03_community_env"></div>
             </div>
 
             <div id="scrollspyHeading4">
               <div>
-                <h1>Entertainment</h1>
+                <div style="background-image: url('pic/band_enter.jpg');
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                border-radius: 1rem;">
+                  <h1 style="
+                  text-align: center;
+                  color: white;
+                  font-size: 70px;
+                  font-weight: bold;
+                  font-family: fantasy;
+                  text-shadow: black 0.1em 0.1em 0.2em;">Entertainment</h1>
+                  <h2  style="
+                  text-align: center;
+                  color: white;
+                  font-size: 33px;
+                  
+                  font-family: fantasy;
+                  text-shadow: black 0.1em 0.1em 0.2em;">待修改</h2>
+                </div>
+                <div class="row">
+                  <div class="col-12" style="padding: 1rem 1rem">
+                    <div id="04_entertainment"></div>
+                  </div>
+                  
+                </div>  
               </div>
 
-              <div id="04_entertainment"></div>
             </div>
 
             <div id="scrollspyHeading5">
               <div>
-                <h1>Rental Price</h1>
-              </div>
+                <div style="background-image: url('【】');
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                border-radius: 1rem;">
+                  <h1 style="
+                  text-align: center;
+                  color: white;
+                  font-size: 70px;
+                  font-weight: bold;
+                  font-family: fantasy;
+                  text-shadow: black 0.1em 0.1em 0.2em;">Rental Price</h1>
+                  <h2  style="
+                  text-align: center;
+                  color: white;
+                  font-size: 33px;
+                  
+                  font-family: fantasy;
+                  text-shadow: black 0.1em 0.1em 0.2em;">The highest price, but it will give you the best experience.</h2>
+                </div>
+                <div class="row">
+                  <div class="col-7" style="padding: 1rem 1rem">
+                    <div id="05_rental_price" ></div>
+                  </div>
+                  <div class="col-5" style="padding: 1rem 1rem">
+                    <div id="carouselExampleCaptions5" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="0" class="active"
+                          aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="2"
+                          aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="3"
+                          aria-label="Slide 4"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="pic/rent1.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>1</h5> -->
+                            
+                          </div>
+                          <!-- <p>House for renting 1.</p> -->
+                        </div>
+                        <div class="carousel-item">
+                          <img src="pic/rent2.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Second (Park)</h5> -->
+                          </div>
+                          <!-- <p>House for renting 2.</p> -->
+                        </div>
+                        <div class="carousel-item">
+                          <img src="pic/rent3.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Restaurants</h5> -->
+                          </div>
+                          <!-- <p>House for renting 3.</p> -->
 
-              <div id="05_rental_price"></div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="pic/rent4.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Restaurants</h5> -->
+                          </div>
+                          <!-- <p>House for renting 4.</p> -->
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions5"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions5"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <p>Some hoses for renting.<abbr title="【】"><b><a href="【】">[source]</a></b></abbr></p>
+                  </div>
+                </div>  
+              </div>
             </div>
           </div>
 
@@ -184,60 +383,11 @@
                 </li>
 
               </ul>
-              <div class="form-check form-switch" style="top:45px; ">
-
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
-                  onclick="changeMode(this)">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Night</label>
-              </div>
+             
             </nav>
 
           </div>
 
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"
-            style="position: fixed; top: 380px;">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="pic/1.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="pic/bg_day.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="pic/bg_night.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
         </div>
 
       </div>
@@ -251,44 +401,33 @@
 We can find some policies about CBD safety on the government website. Here are the CBD safety plans: Protect members of the public and responders from injury or death. Promptly facilitate the safe movement of people away from Danger Areas. Minimise disruption caused to unaffected areas. Maximise availability of transportation assets. Allow the return of evacuees within the earliest possible timeframe. Provide responding organizations with the necessary strategy and information to allow them to effectively implement their roles and responsibilities in support of an evacuation. <abbr title="https://www.nsw.gov.au/rescue-and-emergency-management/sub-plans/sydney-cbd-safety"><b><a href="https://www.nsw.gov.au/rescue-and-emergency-management/sub-plans/sydney-cbd-safety">[source]</a></b></abbr>
 As we all know, life comes first. Life safety is very important to international students. We need to protect ourselves from all kinds of crimes and dangers. To live and learn from the motherland to other strange countries, the first thing to ensure is the safety of life and property. Students studying abroad should always prioritize safety awareness and minimize risks.`
   var f2 = `
-> Sydney's CBD is serviced by commuter rail, light rail, bus, and ferry transport. There are many train stations, such as Central Station, Museum StationTown Hall Station, and so on. There are 501, 436, 480, 483, 3339, 374,100, L23, L28, X09, X10, 21T4, and other direct buses to UTS and USYD. (Bus: 423 426 428 430 Train: T1 T2 T3 T4 T9).<abbr title="https://www.google.com/maps/search/CBD/@-33.8966813,151.1947065,14z/data=!3m1!4b1"><b><a href="[https://www.google.com/maps/search/CBD/@-33.8966813,151.1947065,14z/data=!3m1!4b1]">[source]</a></b></abbr><br>
+> Sydney's CBD is serviced by commuter rail, light rail, bus, and ferry transport. There are many train stations, such as Central Station, Museum StationTown Hall Station, and so on. There are 501, 436, 480, 483, 3339, 374, 100, L23, L28, X09, X10, 21T4, and other direct buses to UTS and USYD. (Bus: 423 426 428 430 Train: T1 T2 T3 T4 T9).<abbr title="https://www.google.com/maps/search/CBD/@-33.8966813,151.1947065,14z/data=!3m1!4b1"><b><a href="[https://www.google.com/maps/search/CBD/@-33.8966813,151.1947065,14z/data=!3m1!4b1]">[source]</a></b></abbr><br>
 For international students, it is important to reach all kinds of places conveniently because they are not familiar with the city and they do have not much energy for searching for information and transport. If they can live in a suburb that is close to their university and markets, banks, and all necessary places, they will have more energy for study.<br>
 #Tips:#
 Within our tests, finding a public transport station will not cost a walker for more than 10 minutes, usually not more than 5. Moreover, there are lots of direct buses and trains and there is no need to transfer.
-<figure class="figure">
-<img src="pic/pic1.jpg" class="figure-img img-fluid rounded" alt="..." style="width:500px;">
-<figcaption class="figure-caption text-end">The distance from USYD to CBD. <abbr title="https://en.wikipedia.org/wiki/Sydney_central_business_district#/map/0"><b><a href="https://en.wikipedia.org/wiki/Sydney_central_business_district#/map/0">[source]</a></b></abbr></figcaption>
-</figure>
 `
   var f3 = `
-#### Reason: 
-sense of belonging. International students need a clean and comfortable environment so that they can get a good rest, and study more efficiently. <br>
-The Cultural environment helps international students adapt to the new city better. no discrimination is important for them to feel relaxed.<br>
-also, there are supermarkets, restaurants, gyms and banks everywhere.<br>
-- shopping:
-APPLE SYDNEY, QUEEN VICTORIA BUILDING,WORLD SQUARE<br>
-- restaurant:cargo bar,mr.wong,ivy sydney,home thai,etc<br>
-- parks:CN parks of friendship,Hyde park,Wynyard park, Macquarie Place Park,Lang park, Royal Botanic Garden Sydney<br>
-- gyms:Fitness First The Zone Platinum,BFT Town Hall,Body Fit Training, CrossFit 168 Sydney,Calisthenics Park (Outdoor Fitness - Fitness Trails Series 4),<br>
-<br>
-Those facilities always play an important role in international students’ daily life.<br>
+In our definition, the environment includes only things outside your apartment, because you can make your room both clean or dirty anywhere!
+These are the four types that may interest you! 
+- Restaurants
+- Gyms
+- Shopping malls
+- Parks
 
-    `
+As the center of the city, there are lots of shopping malls. If you go outside the Townhall station, the Queen Victoria Building(A big shopping mall) is just in front of you. Actually, there are at least 4 big shopping malls in this suburb, with small shops like 7-11 and Metros everywhere!
+Though it is a big commercial center, there are still lots of parks in the CBD. **CN parks of friendship,Hyde park,Wynyard park, Macquarie Place Park,Lang park, Royal Botanic Garden Sydney…** You can reach a park with a little walk if you live here!
+You may not want to cook yourself right? Do not worry! CBD provides you with all kinds of food! Traditional Asian restaurants, Italian restaurants, Fast foods, Find everything you want to eat!
+There are also choices for exercising. Here is a short list of gyms which are located in CBD. Search for a gym which is near your apartment! Fitness First The Zone Platinum, BFT Town Hall, Body Fit Training, CrossFit 168 Sydney, Calisthenics Park…
+  `
   var f4 = `
-#### Reason: 
-international students not only need to study hard, but also need to feel the local culture. In Sydney, many cultural institutions are located in the surrounds of the CBD(the Sydney Opera House and the Museum of Contemporary Art to the north, the Australian Museum and the Art Gallery of New South Wales to the east, etc.)<br>
-If you live here, you can easily participate in these activities.<br>
-<br>
-- places:WILD LIFE SYDNEY, SEA LIFE SYDNEY, Darling harbor, Event Cinemas George Street, Powerhouse Museum, Darling Harbour Theatre, Sydney Opera House, Art Gallery of New South Wales, Sandringham Memorial Garden and Fountain, <br>
-    `
+In general, International students want to study as well as know more about the local culture of Australia. There are many places to visit in Sydney, but without a doubt, most of them lie in Sydney!<br>
+WILD LIFE SYDNEY, SEA LIFE SYDNEY, Darling harbor, Event Cinemas George Street, Powerhouse Museum, Darling Harbour Theatre, Sydney Opera House, Art Gallery of New South Wales, Sandringham Memorial Garden and Fountain, ARE YOU ATTRACTED? COME AND LIVE HERE!
+`
   var f5 = `
-Money Money Money!<br>
-City is the most expensive place to rent. The typical 2 bedroom apartment will usually cost around 1000 pw.<br>
-#### Reason:
-not all international students can afford high living cost.  if other criterias are of the same, an apartment with lower rental price will definitely become more popular.<br>
-Although it’s expensive, it’s a good way that you can rent a house with others, making the price of the house  reasonable. Also, a resident with friends helps you make more friends.
-![]()
-    `
+There is no doubt that the CBD is the most expensive place to rent, but it is also the gathering place of Sydney's urban culture. Convenient living facilities and numerous art exhibitions provide international students with unparalleled learning and living experience.<br>
+In 2023, the rent for two bedrooms and two bathrooms, for example, is already around A $1,000 a week. Although you may find the rent in the CBD unacceptably high, it doesn't seem so unaffordable when you consider that sharing a flat with friends and being close to the CBD which gives you more opportunities to get a high-paid part-time job. Living in CBD will bring you many unexpected surprises and opportunities
+
+`
   document.getElementById('01_safety').innerHTML =
     marked.parse(f1);
   document.getElementById('02_public_trans').innerHTML =
